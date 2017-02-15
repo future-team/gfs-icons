@@ -1,0 +1,19 @@
+{
+  "name": "gfs-icons",
+  "version": "0.1.1",
+  "description": "public icons ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future-team/gfs-icons.git"
+  },
+  "author": "chenaibing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future-team/gfs-icons/issues"
+  },
+  "homepage": "https://github.com/future-team/gfs-icons#readme"
+}
