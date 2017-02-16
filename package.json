@@ -1,8 +1,8 @@
 {
   "name": "gfs-icons",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "public icons ",
-  "main": "index.js",
+  "main": "iconfont.less",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
