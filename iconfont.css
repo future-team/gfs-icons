@@ -16,7 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// 更新时覆盖以下内容，以上内容如果覆盖使用时会报错
+/* 更新时覆盖以下内容，以上内容如果覆盖使用时会报错 */
 
 .icon-more:before { content: "\e608"; }
 
