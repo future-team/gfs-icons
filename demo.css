@@ -364,7 +364,9 @@ pre{
   background: #fff;
 }
 
-
+.markdown pre{
+  overflow-y: auto;
+}
 
 
 
