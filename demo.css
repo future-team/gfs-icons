@@ -368,5 +368,23 @@ pre{
   overflow-y: auto;
 }
 
+#tabTitle{
+  border-bottom: 1px solid #eee;
+}
 
+#tabTitle a{
+  display: inline-block;
+  padding: 6px 15px;
+  margin-bottom: -1px;
+  border: 1px solid #fff;
+  border-bottom-color: #eee;
+  font-size: 18px;
+  color: #999;
+}
+
+#tabTitle a.active{
+  border-color: #eee;
+  border-bottom-color: #fff;
+  color: #333;
+}
 

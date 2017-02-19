@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8"/>
     <title>gfs-icons</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
     <link rel="stylesheet" href="demo.css">
     <link rel="stylesheet" href="iconfont.css" />
 </head>
@@ -11,315 +14,364 @@
     <div class="main markdown">
         <h1>IconFont 图标</h1>
 
-        <h2>Usage</h2>
-        <pre>
-        // global 非正式环境
+        <div id="tabTitle">
+            <a href="javascript:;" class="active">Tutorial</a>
+            <a href="javascript:;">Classify</a>
+        </div>
+        <div id="tabContent">
+            <section>
+                <h3>What is gfs-icons </h3>
+                <p>gfs-icons是一套常用的iconfont库，具体分类及类型可参照Classify。<br/>提供了iconfont.css/iconfont.less文件以及.eot/.svg/.ttf/.woff格式的字体文件，使用时只要引入css或less文件即可。</p>
+
+                <h3>Install</h3>
+                <pre>
+        // 使用npm安装
+        npm install gfs-icons --save
+                </pre>
+
+                <h3>Usage</h3>
+                <pre>
+        // 直接全局引用css文件
         &lt;link rel="stylesheet" href="ihttps://future-team.github.io/gfs-icons/iconfont.css" /&gt;
-        // less
-        @import "gfs-icons/iconfont"
-        // ES6
+        // ES6引入less文件
         import "gfs-icons/iconfont.less"
-
-        &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
-        </pre>
-
-        <h2>Classify</h2>
-
-        <h3>arrow 箭头</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-chevron-left"></i>
-                    <div class="name">chevron-left</div>
-                    <div class="fontclass">.icon-chevron-left</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-chevron-right"></i>
-                    <div class="name">chevron-right</div>
-                    <div class="fontclass">.icon-chevron-right</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-expand-more"></i>
-                    <div class="name">expand-more</div>
-                    <div class="fontclass">.icon-expand-more</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-expand-less"></i>
-                    <div class="name">expand-less</div>
-                    <div class="fontclass">.icon-expand-less</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-arrow-back"></i>
-                    <div class="name">arrow-back</div>
-                    <div class="fontclass">.icon-arrow-back</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-arrow-forward"></i>
-                    <div class="name">arrow-forward</div>
-                    <div class="fontclass">.icon-arrow-forward</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-arrow-downward"></i>
-                    <div class="name">arrow-downward</div>
-                    <div class="fontclass">.icon-arrow-downward</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-arrow-upward"></i>
-                    <div class="name">arrow-upward</div>
-                    <div class="fontclass">.icon-arrow-upward</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-arrow-dropdown"></i>
-                    <div class="name">arrow-dropdown</div>
-                    <div class="fontclass">.icon-arrow-dropdown</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-arrow-dropup"></i>
-                    <div class="name">arrow-dropup</div>
-                    <div class="fontclass">.icon-arrow-dropup</div>
-                </li>
-        </ul>
-        <br/>
-        <hr/>
-
-        <h3>toggle 切换</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-radio-unchecked"></i>
-                    <div class="name">radio-unchecked</div>
-                    <div class="fontclass">.icon-radio-unchecked</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-radio-checked"></i>
-                    <div class="name">radio-checked</div>
-                    <div class="fontclass">.icon-radio-checked</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-radio-checked-fill"></i>
-                    <div class="name">radio-checked-fill</div>
-                    <div class="fontclass">.icon-radio-checked-fill</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-checkbox-unchecked"></i>
-                    <div class="name">checkbox-unchecked</div>
-                    <div class="fontclass">.icon-checkbox-unchecked</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-checkbox-checked"></i>
-                    <div class="name">checkbox-checked</div>
-                    <div class="fontclass">.icon-checkbox-checked</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-checkbox-checked-fill"></i>
-                    <div class="name">checkbox-checked-fill</div>
-                    <div class="fontclass">.icon-checkbox-checked-fill</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-favorite"></i>
-                    <div class="name">favorite</div>
-                    <div class="fontclass">.icon-favorite</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-favorite-fill"></i>
-                    <div class="name">favorite-fill</div>
-                    <div class="fontclass">.icon-favorite-fill</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-star"></i>
-                    <div class="name">star</div>
-                    <div class="fontclass">.icon-star</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-star-fill"></i>
-                    <div class="name">star-fill</div>
-                    <div class="fontclass">.icon-star-fill</div>
-                </li>
-        </ul>
-        <br/>
-        <hr/>
-
-        <h3>action 动作</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-add"></i>
-                    <div class="name">add</div>
-                    <div class="fontclass">.icon-add</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-minus"></i>
-                    <div class="name">minus</div>
-                    <div class="fontclass">.icon-minus</div>
-                </li>          
-                <li>
-                <i class="icon gfs-icon icon-check"></i>
-                    <div class="name">check</div>
-                    <div class="fontclass">.icon-check</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-close"></i>
-                    <div class="name">close</div>
-                    <div class="fontclass">.icon-close</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-search"></i>
-                    <div class="name">search</div>
-                    <div class="fontclass">.icon-search</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-delete"></i>
-                    <div class="name">delete</div>
-                    <div class="fontclass">.icon-delete</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-refresh"></i>
-                    <div class="name">refresh</div>
-                    <div class="fontclass">.icon-refresh</div>
-                </li>
-        </ul>
-        <br/>
-        <hr/>
-
-        <h3>file 文件相关</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-folder"></i>
-                    <div class="name">folder</div>
-                    <div class="fontclass">.icon-folder</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-folder-fill"></i>
-                    <div class="name">folder-fill</div>
-                    <div class="fontclass">.icon-folder-fill</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-folder-open"></i>
-                    <div class="name">folder-open</div>
-                    <div class="fontclass">.icon-folder-open</div>
-                </li>  
-                <li>
-                <i class="icon gfs-icon icon-folder-open-fill"></i>
-                    <div class="name">folder-open-fill</div>
-                    <div class="fontclass">.icon-folder-open-fill</div>
-                <li>
-                <i class="icon gfs-icon icon-upload"></i>
-                    <div class="name">upload</div>
-                    <div class="fontclass">.icon-upload</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-download"></i>
-                    <div class="name">download</div>
-                    <div class="fontclass">.icon-download</div>
-                </li>
-        </ul>
-        <br/>
-        <hr/>
-
-        <h3>mark 特殊标记</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-home"></i>
-                    <div class="name">home</div>
-                    <div class="fontclass">.icon-home</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-home-fill"></i>
-                    <div class="name">home-fill</div>
-                    <div class="fontclass">.icon-home-fill</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-camera"></i>
-                    <div class="name">camera</div>
-                    <div class="fontclass">.icon-camera</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-camera-fill"></i>
-                    <div class="name">camera-fill</div>
-                    <div class="fontclass">.icon-camera-fill</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-clock"></i>
-                    <div class="name">clock</div>
-                    <div class="fontclass">.icon-clock</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-setting"></i>
-                    <div class="name">setting</div>
-                    <div class="fontclass">.icon-setting</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-fenxiang"></i>
-                    <div class="name">share</div>
-                    <div class="fontclass">.icon-fenxiang</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-calendar"></i>
-                    <div class="name">calendar</div>
-                    <div class="fontclass">.icon-calendar</div>
-                </li>
-        </ul>
-        <br/>
-        <hr/>
         
-        <h3>more 更多</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-more"></i>
-                    <div class="name">more</div>
-                    <div class="fontclass">.icon-more</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-more-vertical"></i>
-                    <div class="name">more-vertical</div>
-                    <div class="fontclass">.icon-more-vertical</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-menu"></i>
-                    <div class="name">menu</div>
-                    <div class="fontclass">.icon-menu</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-list"></i>
-                    <div class="name">list</div>
-                    <div class="fontclass">.icon-list</div>
-                </li>  
-        </ul>
-        <br/>
-        <hr/>
+        // 在html中使用
+        &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
+                </pre>
+                <p>关于如何在less文件中引入node_modules中的less文件，直接使用相对路径安装使用时报错。</p>
+                <pre>
+        // 通过工具gulp或其他复制node_modules的less文件到当前项目的开发目录下
+        var copy = function(source, destination){
+            return gulp.src(source)
+                .pipe(gulp.dest(destination));
+        }
 
-        <h3>maps 地图</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-map"></i>
-                    <div class="name">map</div>
-                    <div class="fontclass">.icon-map</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-location"></i>
-                    <div class="name">location</div>
-                    <div class="fontclass">.icon-location</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-place"></i>
-                    <div class="name">place</div>
-                    <div class="fontclass">.icon-place</div>
-                </li>
-                <li>
-                <i class="icon gfs-icon icon-place-fill"></i>
-                    <div class="name">place-fill</div>
-                    <div class="fontclass">.icon-place-fill</div>
-                </li>
-        </ul>
-        <br/>
-        <hr/>
+        gulp.task('fonts', function(){
+            copy('./node_modules/gfs-icons/iconfont/*', './less/iconfont');
+            copy('./node_modules/gfs-icons/*.less', './less');
+        });
 
-        <h3>device 设备</h3>
-        <ul class="icon_lists clear">
-                <li>
-                <i class="icon gfs-icon icon-wifi"></i>
-                    <div class="name">wifi</div>
-                    <div class="fontclass">.icon-wifi</div>
-                </li>
+        // 根据本地路径引入
+        @import "gfs-icons/iconfont.less"
+                </pre>
+            </section>
+            <section style="display:none">
+                <h3>arrow 箭头</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-chevron-left"></i>
+                        <div class="name">chevron-left</div>
+                        <div class="fontclass">.icon-chevron-left</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-chevron-right"></i>
+                        <div class="name">chevron-right</div>
+                        <div class="fontclass">.icon-chevron-right</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-expand-more"></i>
+                        <div class="name">expand-more</div>
+                        <div class="fontclass">.icon-expand-more</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-expand-less"></i>
+                        <div class="name">expand-less</div>
+                        <div class="fontclass">.icon-expand-less</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-back"></i>
+                        <div class="name">arrow-back</div>
+                        <div class="fontclass">.icon-arrow-back</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-forward"></i>
+                        <div class="name">arrow-forward</div>
+                        <div class="fontclass">.icon-arrow-forward</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-downward"></i>
+                        <div class="name">arrow-downward</div>
+                        <div class="fontclass">.icon-arrow-downward</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-upward"></i>
+                        <div class="name">arrow-upward</div>
+                        <div class="fontclass">.icon-arrow-upward</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-dropdown"></i>
+                        <div class="name">arrow-dropdown</div>
+                        <div class="fontclass">.icon-arrow-dropdown</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-dropup"></i>
+                        <div class="name">arrow-dropup</div>
+                        <div class="fontclass">.icon-arrow-dropup</div>
+                    </li>
+                </ul>
+                <br/>
+                <hr/>
 
-        </ul>
+                <h3>toggle 切换</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-radio-unchecked"></i>
+                        <div class="name">radio-unchecked</div>
+                        <div class="fontclass">.icon-radio-unchecked</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-radio-checked"></i>
+                        <div class="name">radio-checked</div>
+                        <div class="fontclass">.icon-radio-checked</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-radio-checked-fill"></i>
+                        <div class="name">radio-checked-fill</div>
+                        <div class="fontclass">.icon-radio-checked-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-checkbox-unchecked"></i>
+                        <div class="name">checkbox-unchecked</div>
+                        <div class="fontclass">.icon-checkbox-unchecked</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-checkbox-checked"></i>
+                        <div class="name">checkbox-checked</div>
+                        <div class="fontclass">.icon-checkbox-checked</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-checkbox-checked-fill"></i>
+                        <div class="name">checkbox-checked-fill</div>
+                        <div class="fontclass">.icon-checkbox-checked-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-favorite"></i>
+                        <div class="name">favorite</div>
+                        <div class="fontclass">.icon-favorite</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-favorite-fill"></i>
+                        <div class="name">favorite-fill</div>
+                        <div class="fontclass">.icon-favorite-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-star"></i>
+                        <div class="name">star</div>
+                        <div class="fontclass">.icon-star</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-star-fill"></i>
+                        <div class="name">star-fill</div>
+                        <div class="fontclass">.icon-star-fill</div>
+                    </li>
+                </ul>
+                <br/>
+                <hr/>
+
+                <h3>action 动作</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-add"></i>
+                        <div class="name">add</div>
+                        <div class="fontclass">.icon-add</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-minus"></i>
+                        <div class="name">minus</div>
+                        <div class="fontclass">.icon-minus</div>
+                    </li>          
+                    <li>
+                    <i class="icon gfs-icon icon-check"></i>
+                        <div class="name">check</div>
+                        <div class="fontclass">.icon-check</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-close"></i>
+                        <div class="name">close</div>
+                        <div class="fontclass">.icon-close</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-search"></i>
+                        <div class="name">search</div>
+                        <div class="fontclass">.icon-search</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-delete"></i>
+                        <div class="name">delete</div>
+                        <div class="fontclass">.icon-delete</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-refresh"></i>
+                        <div class="name">refresh</div>
+                        <div class="fontclass">.icon-refresh</div>
+                    </li>
+                </ul>
+                <br/>
+                <hr/>
+
+                <h3>file 文件相关</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-folder"></i>
+                        <div class="name">folder</div>
+                        <div class="fontclass">.icon-folder</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-folder-fill"></i>
+                        <div class="name">folder-fill</div>
+                        <div class="fontclass">.icon-folder-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-folder-open"></i>
+                        <div class="name">folder-open</div>
+                        <div class="fontclass">.icon-folder-open</div>
+                    </li>  
+                    <li>
+                    <i class="icon gfs-icon icon-folder-open-fill"></i>
+                        <div class="name">folder-open-fill</div>
+                        <div class="fontclass">.icon-folder-open-fill</div>
+                    <li>
+                    <i class="icon gfs-icon icon-upload"></i>
+                        <div class="name">upload</div>
+                        <div class="fontclass">.icon-upload</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-download"></i>
+                        <div class="name">download</div>
+                        <div class="fontclass">.icon-download</div>
+                    </li>
+                </ul>
+                <br/>
+                <hr/>
+
+                <h3>mark 特殊标记</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-home"></i>
+                        <div class="name">home</div>
+                        <div class="fontclass">.icon-home</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-home-fill"></i>
+                        <div class="name">home-fill</div>
+                        <div class="fontclass">.icon-home-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-camera"></i>
+                        <div class="name">camera</div>
+                        <div class="fontclass">.icon-camera</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-camera-fill"></i>
+                        <div class="name">camera-fill</div>
+                        <div class="fontclass">.icon-camera-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-clock"></i>
+                        <div class="name">clock</div>
+                        <div class="fontclass">.icon-clock</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-setting"></i>
+                        <div class="name">setting</div>
+                        <div class="fontclass">.icon-setting</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-fenxiang"></i>
+                        <div class="name">share</div>
+                        <div class="fontclass">.icon-fenxiang</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-calendar"></i>
+                        <div class="name">calendar</div>
+                        <div class="fontclass">.icon-calendar</div>
+                    </li>
+                </ul>
+                <br/>
+                <hr/>
+        
+                <h3>more 更多</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-more"></i>
+                        <div class="name">more</div>
+                        <div class="fontclass">.icon-more</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-more-vertical"></i>
+                        <div class="name">more-vertical</div>
+                        <div class="fontclass">.icon-more-vertical</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-menu"></i>
+                        <div class="name">menu</div>
+                        <div class="fontclass">.icon-menu</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-list"></i>
+                        <div class="name">list</div>
+                        <div class="fontclass">.icon-list</div>
+                    </li>  
+                </ul>
+                <br/>
+                <hr/>
+
+                <h3>maps 地图</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-map"></i>
+                        <div class="name">map</div>
+                        <div class="fontclass">.icon-map</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-location"></i>
+                        <div class="name">location</div>
+                        <div class="fontclass">.icon-location</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-place"></i>
+                        <div class="name">place</div>
+                        <div class="fontclass">.icon-place</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-place-fill"></i>
+                        <div class="name">place-fill</div>
+                        <div class="fontclass">.icon-place-fill</div>
+                    </li>
+                </ul>
+                <br/>
+                <hr/>
+
+                <h3>device 设备</h3>
+                <ul class="icon_lists clear">
+                    <li>
+                    <i class="icon gfs-icon icon-wifi"></i>
+                        <div class="name">wifi</div>
+                        <div class="fontclass">.icon-wifi</div>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
 </body>
+<script>
+    var tabTitle = document.getElementById('tabTitle').getElementsByTagName('a'),
+        tabContent = document.getElementById('tabContent').getElementsByTagName('section');
+
+    var len = tabTitle.length;
+
+    for(var i=0; i<len; i++){
+        tabTitle[i].onclick = function(num){
+            return function(){
+                for(var i=0; i<len; i++){
+                    tabTitle[i].className = "";
+                    tabContent[i].style.display = "none";
+                }
+                tabTitle[num].className = "active";
+                tabContent[num].style.display = "block";
+            }
+        }(i);
+    }
+</script>
 </html>
