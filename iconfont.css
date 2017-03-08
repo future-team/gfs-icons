@@ -152,3 +152,35 @@
 
 .icon-tip:before { content: "\e64a"; }
 
+.icon-arrow-up:before { content: "\e64b"; }
+
+.icon-arrow-down:before { content: "\e64c"; }
+
+.icon-loading:before { content: "\e64d"; }
+
+.icon-font:before { content: "\e64e"; }
+
+.icon-sort:before { content: "\e64f"; }
+
+.icon-id:before { content: "\e650"; }
+
+.icon-scale:before { content: "\e651"; }
+
+.icon-clear:before { content: "\e652"; }
+
+.icon-cancel:before { content: "\e653"; }
+
+.icon-success-fill:before { content: "\e654"; }
+
+.icon-strategy:before { content: "\e655"; }
+
+.icon-add-circle:before { content: "\e656"; }
+
+.icon-add-circle-fill:before { content: "\e657"; }
+
+.icon-fail-fill:before { content: "\e658"; }
+
+.icon-fail:before { content: "\e659"; }
+
+.icon-success:before { content: "\e65a"; }
+

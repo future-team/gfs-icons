@@ -27,5 +27,6 @@
 
 ## Repair
 
+`version 0.3.0` 新增图标，修改使用说明 <br/>
 `version 0.2.0` 新增图标，修改分享图标的class名称 <br/>
 `version 0.1.2` 修改iconfont.less中@font-face <br/>

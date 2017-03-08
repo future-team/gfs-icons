@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="demo.css">
     <link rel="stylesheet" href="iconfont.css" />
+    <link rel="icon" href="http://uedfamily.com/css/images/logo.png">
 </head>
 <body>
     <div class="main markdown">
@@ -35,25 +36,44 @@
         &lt;link rel="stylesheet" href="ihttps://future-team.github.io/gfs-icons/iconfont.css" /&gt;
         // ES6引入less文件
         import "gfs-icons/iconfont.less"
+        // less中引入node_modules中的less文件，通过less-loader打包即可
+        @import "gfs-icons/iconfont.less"
         
         // 在html中使用
         &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
                 </pre>
-                <p>关于如何在less文件中引入node_modules中的less文件，直接使用相对路径安装使用时报错。</p>
+
+                <h3>How iconfont works?</h3>
+                <p>Step 1. 设置@font-face</p>
                 <pre>
-        // 通过工具gulp或其他复制node_modules的less文件到当前项目的开发目录下
-        var copy = function(source, destination){
-            return gulp.src(source)
-                .pipe(gulp.dest(destination));
+        @font-face {font-family: "iconfont";
+            src: url('iconfont/iconfont.eot'); /* IE9*/
+            src: url('iconfont/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+            url('iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
         }
-
-        gulp.task('fonts', function(){
-            copy('./node_modules/gfs-icons/iconfont/*', './less/iconfont');
-            copy('./node_modules/gfs-icons/*.less', './less');
-        });
-
-        // 根据本地路径引入
-        @import "gfs-icons/iconfont.less"
+                </pre>
+                <p>Step 2. 设置font-family对应@font-face的font-family</p>
+                <pre>
+        .gfs-icon {
+            font-family:"iconfont" !important;
+            font-size:16px;
+            font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+                </pre>
+                <p>Step 3. 设置content为对应的ascii码</p>
+                <pre>
+        .icon-more:before { 
+            content: "\e608"; 
+        }
+                </pre>
+                <p>Step 4. 使用</p>
+                <pre>
+        &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
                 </pre>
             </section>
             <section style="display:none">
@@ -108,6 +128,16 @@
                     <i class="icon gfs-icon icon-arrow-dropup"></i>
                         <div class="name">arrow-dropup</div>
                         <div class="fontclass">.icon-arrow-dropup</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-up"></i>
+                        <div class="name">arrow-up</div>
+                        <div class="fontclass">.icon-arrow-up</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-arrow-down"></i>
+                        <div class="name">arrow-down</div>
+                        <div class="fontclass">.icon-arrow-down</div>
                     </li>
                 </ul>
                 <br/>
@@ -206,6 +236,51 @@
                         <div class="name">refresh</div>
                         <div class="fontclass">.icon-refresh</div>
                     </li>
+                    <li>
+                    <i class="icon gfs-icon icon-loading"></i>
+                        <div class="name">loading</div>
+                        <div class="fontclass">.icon-loading</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-clear"></i>
+                        <div class="name">clear</div>
+                        <div class="fontclass">.icon-clear</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-cancel"></i>
+                        <div class="name">cancel</div>
+                        <div class="fontclass">.icon-cancel</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-success"></i>
+                        <div class="name">success</div>
+                        <div class="fontclass">.icon-success</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-success-fill"></i>
+                        <div class="name">success-fill</div>
+                        <div class="fontclass">.icon-success-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-add-circle"></i>
+                        <div class="name">add-circle</div>
+                        <div class="fontclass">.icon-add-circle</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-add-circle-fill"></i>
+                        <div class="name">add-circle-fill</div>
+                        <div class="fontclass">.icon-add-circle-fill</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-fail"></i>
+                        <div class="name">fail</div>
+                        <div class="fontclass">.icon-fail</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-fail-fill"></i>
+                        <div class="name">fail-fill</div>
+                        <div class="fontclass">.icon-fail-fill</div>
+                    </li>
                 </ul>
                 <br/>
                 <hr/>
@@ -240,16 +315,6 @@
                     <i class="icon gfs-icon icon-download"></i>
                         <div class="name">download</div>
                         <div class="fontclass">.icon-download</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-feedback"></i>
-                        <div class="name">feedback</div>
-                        <div class="fontclass">.icon-feedback</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-text"></i>
-                        <div class="name">text</div>
-                        <div class="fontclass">.icon-text</div>
                     </li>
                 </ul>
                 <br/>
@@ -321,6 +386,36 @@
                     <i class="icon gfs-icon icon-filter"></i>
                         <div class="name">filter</div>
                         <div class="fontclass">.icon-filter</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-font"></i>
+                        <div class="name">font</div>
+                        <div class="fontclass">.icon-font</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-sort"></i>
+                        <div class="name">sort</div>
+                        <div class="fontclass">.icon-sort</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-id"></i>
+                        <div class="name">id</div>
+                        <div class="fontclass">.icon-id</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-strategy"></i>
+                        <div class="name">strategy</div>
+                        <div class="fontclass">.icon-strategy</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-feedback"></i>
+                        <div class="name">feedback</div>
+                        <div class="fontclass">.icon-feedback</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-text"></i>
+                        <div class="name">text</div>
+                        <div class="fontclass">.icon-text</div>
                     </li>
                 </ul>
                 <br/>
@@ -440,6 +535,11 @@
                     <i class="icon gfs-icon icon-wifi"></i>
                         <div class="name">wifi</div>
                         <div class="fontclass">.icon-wifi</div>
+                    </li>
+                    <li>
+                    <i class="icon gfs-icon icon-scale"></i>
+                        <div class="name">scale</div>
+                        <div class="fontclass">.icon-scale</div>
                     </li>
                 </ul>
             </section>
