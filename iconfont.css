@@ -18,6 +18,8 @@
 
 /* 更新时覆盖以下内容，以上内容如果覆盖使用时会报错 */
 
+.icon-zuoxuanzhuan:before { content: "\e604"; }
+
 .icon-more:before { content: "\e608"; }
 
 .icon-minus:before { content: "\e609"; }
@@ -184,3 +186,4 @@
 
 .icon-success:before { content: "\e65a"; }
 
+.icon-youxuanzhuan:before { content: "\e65b"; }
