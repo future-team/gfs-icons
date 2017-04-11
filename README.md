@@ -26,6 +26,8 @@
 -  README.md中增加版本号＋修改内容。
 
 ## Repair
+
+`version 0.3.3` 新增点赞、修改、橡皮擦 <br/>
 `version 0.3.2` 新增图标，左右旋转 <br/>
 `version 0.3.0` 新增图标，修改使用说明 <br/>
 `version 0.2.0` 新增图标，修改分享图标的class名称 <br/>
