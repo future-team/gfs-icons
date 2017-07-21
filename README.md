@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-    <span class="gfs-icon icon-chevron-left">按钮</span>
+    <span class="gfs-icon icon-chevron-left"></span>
 ```
 
 ## Documentation
@@ -27,6 +27,7 @@
 
 ## Repair
 
+`version 1.0.0` 规范化iconfont <br/>
 `version 0.3.3` 新增点赞、修改、橡皮擦 <br/>
 `version 0.3.2` 新增图标，左右旋转 <br/>
 `version 0.3.0` 新增图标，修改使用说明 <br/>

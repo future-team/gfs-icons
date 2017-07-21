@@ -1,6 +1,6 @@
 {
   "name": "gfs-icons",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "description": "public icons ",
   "main": "iconfont.less",
   "scripts": {
