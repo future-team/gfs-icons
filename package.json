@@ -1,8 +1,12 @@
 {
   "name": "gfs-icons",
   "version": "1.0.0",
-  "description": "public icons ",
+  "description": "Public icons for phoenix-ui and eagle-ui.",
   "main": "iconfont.less",
+  "keywords": [
+    "gfs-icons",
+    "icons"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/future-team/gfs-icons.git"
   },
-  "author": "chenaibing",
-  "license": "ISC",
+  "author": {
+    "name": "chenaibing",
+    "email": "348549708@qq.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/future-team/gfs-icons/issues"
   },
