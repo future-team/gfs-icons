@@ -16,7 +16,7 @@
 [http://future-team.github.io/gfs-icons/index.html](http://future-team.github.io/gfs-icons/index.html)
 
 ## To Developer
-图标管理在[Iconfont](http://www.iconfont.cn/)我的项目中的`gfs-icons`中，有需要添加可以自行上传&命名。
+图标管理在[Iconfont](http://www.iconfont.cn/)我的项目中的`gfs-icons`中，有需要新增需要联系设计同学增加。
 操作步骤：
 -  将需要的icon下载到本地，通过`云朵标记`上传icon的svg格式（目前只能上传svg格式图标）；在我的图标中进行编辑，如重命名、图标大小、旋转等；添加到购物车，然后直接添加到项目中。
 -  可以直接选择需要的icon添加到购物车，然后直接添加到项目中，这样做的缺点是无法改变icon的默认名称。

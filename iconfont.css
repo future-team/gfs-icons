@@ -17,9 +17,6 @@
 }
 
 /* 更新时覆盖以下内容，以上内容如果覆盖使用时会报错 */
-
-
-
 .icon-delete:before { content: "\e731"; }
 
 .icon-chevron-left:before { content: "\e603"; }
@@ -46,13 +43,7 @@
 
 .icon-success:before { content: "\e61d"; }
 
-.icon-success-fill:before { content: "\e61e"; }
-
-.icon-tip-fill:before { content: "\e620"; }
-
 .icon-waiting-fill:before { content: "\e622"; }
-
-.icon-close-fill:before { content: "\e623"; }
 
 .icon-share:before { content: "\e624"; }
 
@@ -67,8 +58,6 @@
 .icon-location:before { content: "\e62a"; }
 
 .icon-question-circle:before { content: "\e62b"; }
-
-.icon-warning-fill:before { content: "\e62c"; }
 
 .icon-decline:before { content: "\e62d"; }
 
@@ -170,8 +159,6 @@
 
 .icon-gukeyingxiao-fill:before { content: "\e669"; }
 
-.icon-biyan:before { content: "\e66a"; }
-
 .icon-label-zu:before { content: "\e66f"; }
 
 .icon-label-tuan:before { content: "\e674"; }
@@ -192,7 +179,7 @@
 
 .icon-label-yin:before { content: "\e67c"; }
 
-.icon-label-qia:before { content: "\e67d"; }
+.icon-label-ka:before { content: "\e67d"; }
 
 .icon-label-wai:before { content: "\e67e"; }
 
@@ -206,3 +193,20 @@
 
 .icon-label-huo:before { content: "\e683"; }
 
+.icon-success-fill:before { content: "\e684"; }
+
+.icon-success-circle:before { content: "\e685"; }
+
+.icon-fail-fill:before { content: "\e686"; }
+
+.icon-fail-circle:before { content: "\e687"; }
+
+.icon-warning-fill:before { content: "\e688"; }
+
+.icon-warning-circle:before { content: "\e689"; }
+
+.icon-tip-fill:before { content: "\e68a"; }
+
+.icon-tip-circle:before { content: "\e68b"; }
+
+.icon-biyan:before { content: "\e690"; }
