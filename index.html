@@ -12,569 +12,673 @@
     <link rel="icon" href="http://uedfamily.com/css/images/logo.png">
 </head>
 <body>
-    <div class="main markdown">
-        <h1>IconFont 图标</h1>
+<div class="main markdown">
+    <h1>IconFont 图标</h1>
 
-        <div id="tabTitle">
-            <a href="javascript:;" class="active">Tutorial</a>
-            <a href="javascript:;">Classify</a>
-        </div>
-        <div id="tabContent">
-            <section>
-                <h3>What is gfs-icons </h3>
-                <p>gfs-icons是一套常用的iconfont库，具体分类及类型可参照Classify。<br/>提供了iconfont.css/iconfont.less文件以及.eot/.svg/.ttf/.woff格式的字体文件，使用时只要引入css或less文件即可。</p>
-
-                <h3>Install</h3>
-                <pre>
-        // 使用npm安装
-        npm install gfs-icons --save
-                </pre>
-
-                <h3>Usage</h3>
-                <pre>
-        // 直接全局引用css文件
-        &lt;link rel="stylesheet" href="ihttps://future-team.github.io/gfs-icons/iconfont.css" /&gt;
-        // ES6引入less文件
-        import "gfs-icons/iconfont.less"
-        // less中引入node_modules中的less文件，通过less-loader打包即可
-        @import "gfs-icons/iconfont.less"
-        
-        // 在html中使用
-        &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
-                </pre>
-
-                <h3>How iconfont works?</h3>
-                <p>Step 1. 设置@font-face</p>
-                <pre>
-        @font-face {font-family: "iconfont";
-            src: url('iconfont/iconfont.eot'); /* IE9*/
-            src: url('iconfont/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
-            url('iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-            url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
-        }
-                </pre>
-                <p>Step 2. 设置font-family对应@font-face的font-family</p>
-                <pre>
-        .gfs-icon {
-            font-family:"iconfont" !important;
-            font-size:16px;
-            font-style:normal;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-stroke-width: 0.2px;
-            -moz-osx-font-smoothing: grayscale;
-        }
-                </pre>
-                <p>Step 3. 设置content为对应的ascii码</p>
-                <pre>
-        .icon-more:before { 
-            content: "\e608"; 
-        }
-                </pre>
-                <p>Step 4. 使用</p>
-                <pre>
-        &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
-                </pre>
-            </section>
-            <section style="display:none">
-                <h3>arrow 箭头</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-chevron-left"></i>
-                        <div class="name">chevron-left</div>
-                        <div class="fontclass">.icon-chevron-left</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-chevron-right"></i>
-                        <div class="name">chevron-right</div>
-                        <div class="fontclass">.icon-chevron-right</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-expand-more"></i>
-                        <div class="name">expand-more</div>
-                        <div class="fontclass">.icon-expand-more</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-expand-less"></i>
-                        <div class="name">expand-less</div>
-                        <div class="fontclass">.icon-expand-less</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-back"></i>
-                        <div class="name">arrow-back</div>
-                        <div class="fontclass">.icon-arrow-back</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-forward"></i>
-                        <div class="name">arrow-forward</div>
-                        <div class="fontclass">.icon-arrow-forward</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-downward"></i>
-                        <div class="name">arrow-downward</div>
-                        <div class="fontclass">.icon-arrow-downward</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-upward"></i>
-                        <div class="name">arrow-upward</div>
-                        <div class="fontclass">.icon-arrow-upward</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-dropdown"></i>
-                        <div class="name">arrow-dropdown</div>
-                        <div class="fontclass">.icon-arrow-dropdown</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-dropup"></i>
-                        <div class="name">arrow-dropup</div>
-                        <div class="fontclass">.icon-arrow-dropup</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-up"></i>
-                        <div class="name">arrow-up</div>
-                        <div class="fontclass">.icon-arrow-up</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-arrow-down"></i>
-                        <div class="name">arrow-down</div>
-                        <div class="fontclass">.icon-arrow-down</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>toggle 切换</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-radio-unchecked"></i>
-                        <div class="name">radio-unchecked</div>
-                        <div class="fontclass">.icon-radio-unchecked</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-radio-checked"></i>
-                        <div class="name">radio-checked</div>
-                        <div class="fontclass">.icon-radio-checked</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-radio-checked-fill"></i>
-                        <div class="name">radio-checked-fill</div>
-                        <div class="fontclass">.icon-radio-checked-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-checkbox-unchecked"></i>
-                        <div class="name">checkbox-unchecked</div>
-                        <div class="fontclass">.icon-checkbox-unchecked</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-checkbox-checked"></i>
-                        <div class="name">checkbox-checked</div>
-                        <div class="fontclass">.icon-checkbox-checked</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-checkbox-checked-fill"></i>
-                        <div class="name">checkbox-checked-fill</div>
-                        <div class="fontclass">.icon-checkbox-checked-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-favorite"></i>
-                        <div class="name">favorite</div>
-                        <div class="fontclass">.icon-favorite</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-favorite-fill"></i>
-                        <div class="name">favorite-fill</div>
-                        <div class="fontclass">.icon-favorite-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-star"></i>
-                        <div class="name">star</div>
-                        <div class="fontclass">.icon-star</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-star-fill"></i>
-                        <div class="name">star-fill</div>
-                        <div class="fontclass">.icon-star-fill</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>action 动作</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-add"></i>
-                        <div class="name">add</div>
-                        <div class="fontclass">.icon-add</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-minus"></i>
-                        <div class="name">minus</div>
-                        <div class="fontclass">.icon-minus</div>
-                    </li>          
-                    <li>
-                    <i class="icon gfs-icon icon-check"></i>
-                        <div class="name">check</div>
-                        <div class="fontclass">.icon-check</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-close"></i>
-                        <div class="name">close</div>
-                        <div class="fontclass">.icon-close</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-search"></i>
-                        <div class="name">search</div>
-                        <div class="fontclass">.icon-search</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-delete"></i>
-                        <div class="name">delete</div>
-                        <div class="fontclass">.icon-delete</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-refresh"></i>
-                        <div class="name">refresh</div>
-                        <div class="fontclass">.icon-refresh</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-loading"></i>
-                        <div class="name">loading</div>
-                        <div class="fontclass">.icon-loading</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-clear"></i>
-                        <div class="name">clear</div>
-                        <div class="fontclass">.icon-clear</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-cancel"></i>
-                        <div class="name">cancel</div>
-                        <div class="fontclass">.icon-cancel</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-success"></i>
-                        <div class="name">success</div>
-                        <div class="fontclass">.icon-success</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-success-fill"></i>
-                        <div class="name">success-fill</div>
-                        <div class="fontclass">.icon-success-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-add-circle"></i>
-                        <div class="name">add-circle</div>
-                        <div class="fontclass">.icon-add-circle</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-add-circle-fill"></i>
-                        <div class="name">add-circle-fill</div>
-                        <div class="fontclass">.icon-add-circle-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-fail"></i>
-                        <div class="name">fail</div>
-                        <div class="fontclass">.icon-fail</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-fail-fill"></i>
-                        <div class="name">fail-fill</div>
-                        <div class="fontclass">.icon-fail-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-zuoxuanzhuan"></i>
-                        <div class="name">rotate-left</div>
-                        <div class="fontclass">.icon-zuoxuanzhuan</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-youxuanzhuan"></i>
-                        <div class="name">rotate-left</div>
-                        <div class="fontclass">.icon-youxuanzhuan</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-eraser"></i>
-                        <div class="name">eraser</div>
-                        <div class="fontclass">.icon-eraser</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-modify"></i>
-                        <div class="name">modify</div>
-                        <div class="fontclass">.icon-modify</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-zan"></i>
-                        <div class="name">zan</div>
-                        <div class="fontclass">.icon-zan</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-zan-fill"></i>
-                        <div class="name">zan-fill</div>
-                        <div class="fontclass">.icon-zan-fill</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>file 文件相关</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-folder"></i>
-                        <div class="name">folder</div>
-                        <div class="fontclass">.icon-folder</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-folder-fill"></i>
-                        <div class="name">folder-fill</div>
-                        <div class="fontclass">.icon-folder-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-folder-open"></i>
-                        <div class="name">folder-open</div>
-                        <div class="fontclass">.icon-folder-open</div>
-                    </li>  
-                    <li>
-                    <i class="icon gfs-icon icon-folder-open-fill"></i>
-                        <div class="name">folder-open-fill</div>
-                        <div class="fontclass">.icon-folder-open-fill</div>
-                    <li>
-                    <i class="icon gfs-icon icon-upload"></i>
-                        <div class="name">upload</div>
-                        <div class="fontclass">.icon-upload</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-download"></i>
-                        <div class="name">download</div>
-                        <div class="fontclass">.icon-download</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>mark 特殊标记</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-home"></i>
-                        <div class="name">home</div>
-                        <div class="fontclass">.icon-home</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-home-fill"></i>
-                        <div class="name">home-fill</div>
-                        <div class="fontclass">.icon-home-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-camera"></i>
-                        <div class="name">camera</div>
-                        <div class="fontclass">.icon-camera</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-camera-fill"></i>
-                        <div class="name">camera-fill</div>
-                        <div class="fontclass">.icon-camera-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-clock"></i>
-                        <div class="name">clock</div>
-                        <div class="fontclass">.icon-clock</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-setting"></i>
-                        <div class="name">setting</div>
-                        <div class="fontclass">.icon-setting</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-share"></i>
-                        <div class="name">share</div>
-                        <div class="fontclass">.icon-share</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-calendar"></i>
-                        <div class="name">calendar</div>
-                        <div class="fontclass">.icon-calendar</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-phone"></i>
-                        <div class="name">phone</div>
-                        <div class="fontclass">.icon-phone</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-user"></i>
-                        <div class="name">user</div>
-                        <div class="fontclass">.icon-user</div>
-                    </li>
-                     <li>
-                    <i class="icon gfs-icon icon-user-fill"></i>
-                        <div class="name">user-fill</div>
-                        <div class="fontclass">.icon-user-fill</div>
-                    </li>                    
-                    <li>
-                    <i class="icon gfs-icon icon-help"></i>
-                        <div class="name">help</div>
-                        <div class="fontclass">.icon-help</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-filter"></i>
-                        <div class="name">filter</div>
-                        <div class="fontclass">.icon-filter</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-font"></i>
-                        <div class="name">font</div>
-                        <div class="fontclass">.icon-font</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-sort"></i>
-                        <div class="name">sort</div>
-                        <div class="fontclass">.icon-sort</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-id"></i>
-                        <div class="name">id</div>
-                        <div class="fontclass">.icon-id</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-strategy"></i>
-                        <div class="name">strategy</div>
-                        <div class="fontclass">.icon-strategy</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-feedback"></i>
-                        <div class="name">feedback</div>
-                        <div class="fontclass">.icon-feedback</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-text"></i>
-                        <div class="name">text</div>
-                        <div class="fontclass">.icon-text</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>info 消息／提示相关</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-alert"></i>
-                        <div class="name">alert</div>
-                        <div class="fontclass">.icon-alert</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-alert-fill"></i>
-                        <div class="name">alert-fill</div>
-                        <div class="fontclass">.icon-alert-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-dialogue"></i>
-                        <div class="name">dialogue</div>
-                        <div class="fontclass">.icon-dialogue</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-dialogue-fill"></i>
-                        <div class="name">dialogue-fill</div>
-                        <div class="fontclass">.icon-dialogue-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-message"></i>
-                        <div class="name">message</div>
-                        <div class="fontclass">.icon-message</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-message-fill"></i>
-                        <div class="name">message-fill</div>
-                        <div class="fontclass">.icon-message-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-tip"></i>
-                        <div class="name">tip</div>
-                        <div class="fontclass">.icon-tip</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-tip-fill"></i>
-                        <div class="name">tip-fill</div>
-                        <div class="fontclass">.icon-tip-fill</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-question"></i>
-                        <div class="name">question</div>
-                        <div class="fontclass">.icon-question</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-question-fill"></i>
-                        <div class="name">question-fill</div>
-                        <div class="fontclass">.icon-question-fill</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-        
-                <h3>more 更多</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-more"></i>
-                        <div class="name">more</div>
-                        <div class="fontclass">.icon-more</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-more-vertical"></i>
-                        <div class="name">more-vertical</div>
-                        <div class="fontclass">.icon-more-vertical</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-menu"></i>
-                        <div class="name">menu</div>
-                        <div class="fontclass">.icon-menu</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-list"></i>
-                        <div class="name">list</div>
-                        <div class="fontclass">.icon-list</div>
-                    </li>  
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>maps 地图</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-map"></i>
-                        <div class="name">map</div>
-                        <div class="fontclass">.icon-map</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-location"></i>
-                        <div class="name">location</div>
-                        <div class="fontclass">.icon-location</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-place"></i>
-                        <div class="name">place</div>
-                        <div class="fontclass">.icon-place</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-place-fill"></i>
-                        <div class="name">place-fill</div>
-                        <div class="fontclass">.icon-place-fill</div>
-                    </li>
-                </ul>
-                <br/>
-                <hr/>
-
-                <h3>device 设备</h3>
-                <ul class="icon_lists clear">
-                    <li>
-                    <i class="icon gfs-icon icon-wifi"></i>
-                        <div class="name">wifi</div>
-                        <div class="fontclass">.icon-wifi</div>
-                    </li>
-                    <li>
-                    <i class="icon gfs-icon icon-scale"></i>
-                        <div class="name">scale</div>
-                        <div class="fontclass">.icon-scale</div>
-                    </li>
-                </ul>
-            </section>
-        </div>
+    <div id="tabTitle">
+        <a href="javascript:;" class="active">分类</a>
+        <a href="javascript:;">指南</a>
     </div>
+    <div id="tabContent">
+        <section>
+            <h3 id="arrow">arrow 箭头</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-chevron-left"></i>
+                    <div class="name">左</div>
+                    <div class="fontclass">.icon-chevron-left</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-chevron-right"></i>
+                    <div class="name">右</div>
+                    <div class="fontclass">.icon-chevron-right</div>
+                </li>
+
+                <li>
+                <i class="icon gfs-icon icon-expand-less"></i>
+                    <div class="name">上</div>
+                    <div class="fontclass">.icon-expand-less</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-expand-more"></i>
+                    <div class="name">下</div>
+                    <div class="fontclass">.icon-expand-more</div>
+                </li>
+
+                <li>
+                <i class="icon gfs-icon icon-decline"></i>
+                    <div class="name">下降</div>
+                    <div class="fontclass">.icon-decline</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-rise"></i>
+                    <div class="name">上升</div>
+                    <div class="fontclass">.icon-rise</div>
+                </li>
+            </ul>
+            <br/>
+            <hr/>
+
+            <h3 id="form">form 表单</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-radio"></i>
+                    <div class="name">单选-未选中</div>
+                    <div class="fontclass">.icon-radio</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-radio-checked"></i>
+                    <div class="name">单选-选中态</div>
+                    <div class="fontclass">.icon-radio-checked</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-checkbox"></i>
+                    <div class="name">复选-未选中</div>
+                    <div class="fontclass">.icon-checkbox</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-checkbox-checked"></i>
+                    <div class="name">复选-选中态</div>
+                    <div class="fontclass">.icon-checkbox-checked</div>
+                </li>
+            </ul>
+            <br/>
+            <hr/>
+
+            <h3 id="label">label 标签</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-label-zu"></i>
+                    <div class="name"> label-租</div>
+                    <div class="fontclass">.icon-label-zu</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-tuan"></i>
+                    <div class="name"> label-团</div>
+                    <div class="fontclass">.icon-label-tuan</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-fu"></i>
+                    <div class="name"> label-付</div>
+                    <div class="fontclass">.icon-label-fu</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-cu"></i>
+                    <div class="name"> label-促</div>
+                    <div class="fontclass">.icon-label-cu</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-quan"></i>
+                    <div class="name"> label-券</div>
+                    <div class="fontclass">.icon-label-quan</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-shou"></i>
+                    <div class="name"> label-售</div>
+                    <div class="fontclass">.icon-label-shou</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-piao"></i>
+                    <div class="name"> label-票</div>
+                    <div class="fontclass">.icon-label-piao</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-ding"></i>
+                    <div class="name"> label-订</div>
+                    <div class="fontclass">.icon-label-ding</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-jia"></i>
+                    <div class="name"> label-家</div>
+                    <div class="fontclass">.icon-label-jia</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-yin"></i>
+                    <div class="name"> label-银</div>
+                    <div class="fontclass">.icon-label-yin</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-ka"></i>
+                    <div class="name"> label-卡</div>
+                    <div class="fontclass">.icon-label-ka</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-wai"></i>
+                    <div class="name"> label-外</div>
+                    <div class="fontclass">.icon-label-wai</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-dian"></i>
+                    <div class="name"> label-点</div>
+                    <div class="fontclass">.icon-label-dian</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-pin"></i>
+                    <div class="name"> label-拼</div>
+                    <div class="fontclass">.icon-label-pin</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-ke"></i>
+                    <div class="name"> label-课</div>
+                    <div class="fontclass">.icon-label-ke</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-pai"></i>
+                    <div class="name"> label-排</div>
+                    <div class="fontclass">.icon-label-pai</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-label-huo"></i>
+                    <div class="name"> label-活</div>
+                    <div class="fontclass">.icon-label-huo</div>
+                </li>
+            </ul>
+            <br/>
+            <hr/>
+
+            <h3 id="action">action 动作</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-yinsi"></i>
+                    <div class="name">隐私</div>
+                    <div class="fontclass">.icon-yinsi</div>
+                </li>
+
+                <li>
+                <i class="icon gfs-icon icon-biyan"></i>
+                    <div class="name">闭眼</div>
+                    <div class="fontclass">.icon-biyan</div>
+                </li>
+            </ul><br/>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-add"></i>
+                    <div class="name">增加</div>
+                    <div class="fontclass">.icon-add</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-minus"></i>
+                    <div class="name">减少</div>
+                    <div class="fontclass">.icon-minus</div>
+                </li>
+
+                <li>
+                <i class="icon gfs-icon icon-success"></i>
+                    <div class="name">勾选</div>
+                    <div class="fontclass">.icon-success</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-close"></i>
+                    <div class="name">叉</div>
+                    <div class="fontclass">.icon-close</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-add-circle"></i>
+                    <div class="name">加</div>
+                    <div class="fontclass">.icon-add-circle</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-close-circle"></i>
+                    <div class="name">关闭</div>
+                    <div class="fontclass">.icon-close-circle</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-minus-circle"></i>
+                    <div class="name">减</div>
+                    <div class="fontclass">.icon-minus-circle</div>
+                </li>
+            </ul><br/>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-top"></i>
+                    <div class="name">返回顶部</div>
+                    <div class="fontclass">.icon-top</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-release"></i>
+                    <div class="name">释放</div>
+                    <div class="fontclass">.icon-release</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-upload"></i>
+                    <div class="name">上传</div>
+                    <div class="fontclass">.icon-upload</div>
+                </li>
+                
+                <li>
+                <i class="icon gfs-icon icon-delete"></i>
+                    <div class="name">删除</div>
+                    <div class="fontclass">.icon-delete</div>
+                </li>
+
+                <li>
+                <i class="icon gfs-icon icon-search"></i>
+                    <div class="name">搜索</div>
+                    <div class="fontclass">.icon-search</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-slice"></i>
+                    <div class="name">保存</div>
+                    <div class="fontclass">.icon-slice</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-zhuanfa"></i>
+                    <div class="name">转发</div>
+                    <div class="fontclass">.icon-zhuanfa</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-share"></i>
+                    <div class="name">分享</div>
+                    <div class="fontclass">.icon-share</div>
+                </li>
+            </ul>
+            <hr/>
+
+            <h3 id="info">info 消息／提示相关</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-success-fill"></i>
+                    <div class="name">成功02</div>
+                    <div class="fontclass">.icon-success-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-success-circle"></i>
+                    <div class="name">成功01</div>
+                    <div class="fontclass">.icon-success-circle</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-fail-fill"></i>
+                    <div class="name">出错02</div>
+                    <div class="fontclass">.icon-fail-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-fail-circle"></i>
+                    <div class="name">出错01</div>
+                    <div class="fontclass">.icon-fail-circle</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-warning-fill"></i>
+                    <div class="name">警告02</div>
+                    <div class="fontclass">.icon-warning-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-warning-circle"></i>
+                    <div class="name">警告01</div>
+                    <div class="fontclass">.icon-warning-circle</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tip-fill"></i>
+                    <div class="name">提示02</div>
+                    <div class="fontclass">.icon-tip-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tip-circle"></i>
+                    <div class="name">提示01</div>
+                    <div class="fontclass">.icon-tip-circle</div>
+                </li>
+            </ul>
+            <br/>
+            <hr/>
+
+            <h3 id="maps">maps 地图</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-location"></i>
+                    <div class="name">定位符</div>
+                    <div class="fontclass">.icon-location</div>
+                </li>
+            </ul>
+            <br/>
+            <hr/>
+
+            <h3 id="mark">mark 特殊标记</h3>
+            <ul class="icon_lists clear">
+                <li>
+                <i class="icon gfs-icon icon-dingdanzhongxin-fill"></i>
+                    <div class="name">订单中心</div>
+                    <div class="fontclass">.icon-dingdanzhongxin-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-koubeiguanli-fill"></i>
+                    <div class="name">口碑管理</div>
+                    <div class="fontclass">.icon-koubeiguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tuangoushanhui-fill"></i>
+                    <div class="name">团购闪惠</div>
+                    <div class="fontclass">.icon-tuangoushanhui-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tupianguanli-fill"></i>
+                    <div class="name">图片管理</div>
+                    <div class="fontclass">.icon-tupianguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-huiyuanguanli-fill"></i>
+                    <div class="name">会员管理</div>
+                    <div class="fontclass">.icon-huiyuanguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tuiguangtong-fill"></i>
+                    <div class="name">推广通</div>
+                    <div class="fontclass">.icon-tuiguangtong-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-huodongbaoming-fill"></i>
+                    <div class="name">活动报名</div>
+                    <div class="fontclass">.icon-huodongbaoming-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-jingyingcanmou-fill"></i>
+                    <div class="name">经营参谋</div>
+                    <div class="fontclass">.icon-jingyingcanmou-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-dingdanguanli-fill"></i>
+                    <div class="name">订单管理</div>
+                    <div class="fontclass">.icon-dingdanguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tonghangpaiming-fill"></i>
+                    <div class="name">同行排名</div>
+                    <div class="fontclass">.icon-tonghangpaiming-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-renqibang-fill"></i>
+                    <div class="name">人气榜</div>
+                    <div class="fontclass">.icon-renqibang-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-mendianguanli-fill"></i>
+                    <div class="name">门店管理</div>
+                    <div class="fontclass">.icon-mendianguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-caiwuguanli-fill"></i>
+                    <div class="name">财务管理</div>
+                    <div class="fontclass">.icon-caiwuguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-yudingguanli-fill"></i>
+                    <div class="name">预订管理</div>
+                    <div class="fontclass">.icon-yudingguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-mashangfu-fill"></i>
+                    <div class="name">码上付</div>
+                    <div class="fontclass">.icon-mashangfu-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tongchenghuodong-fill"></i>
+                    <div class="name">同城活动</div>
+                    <div class="fontclass">.icon-tongchenghuodong-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-zhibo-fill"></i>
+                    <div class="name">直播</div>
+                    <div class="fontclass">.icon-zhibo-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-jieqian-fill"></i>
+                    <div class="name">借钱</div>
+                    <div class="fontclass">.icon-jieqian-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-youhuicuxiao-fill"></i>
+                    <div class="name">优惠促销</div>
+                    <div class="fontclass">.icon-youhuicuxiao-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-meidianbao-fill"></i>
+                    <div class="name">美店宝</div>
+                    <div class="fontclass">.icon-meidianbao-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-shangjiaqianbao-fill"></i>
+                    <div class="name">商家钱包</div>
+                    <div class="fontclass">.icon-shangjiaqianbao-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-zhinengzhifu-fill"></i>
+                    <div class="name">智能支付</div>
+                    <div class="fontclass">.icon-zhinengzhifu-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-saomafu-fill"></i>
+                    <div class="name">扫码付</div>
+                    <div class="fontclass">.icon-saomafu-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-meiyedaxue-fill"></i>
+                    <div class="name">美业大学</div>
+                    <div class="fontclass">.icon-meiyedaxue-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-shangdanguanli-fill"></i>
+                    <div class="name">上单管理</div>
+                    <div class="fontclass">.icon-shangdanguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-neirongguanli-fill"></i>
+                    <div class="name">内容管理</div>
+                    <div class="fontclass">.icon-neirongguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-jiaoyu-fill"></i>
+                    <div class="name">教育</div>
+                    <div class="fontclass">.icon-jiaoyu-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-shanghuguanli-fill"></i>
+                    <div class="name">商户管理</div>
+                    <div class="fontclass">.icon-shanghuguanli-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-mianfeishiyong-fill"></i>
+                    <div class="name">免费试用</div>
+                    <div class="fontclass">.icon-mianfeishiyong-fill</div>
+                </li>
+
+                <li>
+                <i class="icon gfs-icon icon-gukeyingxiao-fill"></i>
+                    <div class="name">顾客营销</div>
+                    <div class="fontclass">.icon-gukeyingxiao-fill</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-xiaofeitongji"></i>
+                    <div class="name">消费统计</div>
+                    <div class="fontclass">.icon-xiaofeitongji</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-zhangdan"></i>
+                    <div class="name">账单</div>
+                    <div class="fontclass">.icon-zhangdan</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-tuandanguanli"></i>
+                    <div class="name">团单管理</div>
+                    <div class="fontclass">.icon-tuandanguanli</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-mendianpingjia"></i>
+                    <div class="name">门店评价</div>
+                    <div class="fontclass">.icon-mendianpingjia</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tuandanpingjia"></i>
+                    <div class="name">团单管理</div>
+                    <div class="fontclass">.icon-tuandanpingjia</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-shangjiawenda"></i>
+                    <div class="name">商家问答</div>
+                    <div class="fontclass">.icon-shangjiawenda</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-fendianpaiming"></i>
+                    <div class="name">分店排名</div>
+                    <div class="fontclass">.icon-fendianpaiming</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-tonghangpaiming"></i>
+                    <div class="name">同行排名</div>
+                    <div class="fontclass">.icon-tonghangpaiming</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-jingduiguanzhu"></i>
+                    <div class="name">竞对关注</div>
+                    <div class="fontclass">.icon-jingduiguanzhu</div>
+                </li>
+            
+                <li>
+                <i class="icon gfs-icon icon-kaidiancankao"></i>
+                    <div class="name">开店参考</div>
+                    <div class="fontclass">.icon-kaidiancankao</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-wodepaiming"></i>
+                    <div class="name">我的排名</div>
+                    <div class="fontclass">.icon-wodepaiming</div>
+                </li>
+                <li>
+                <i class="icon gfs-icon icon-yanquan"></i>
+                    <div class="name">验券</div>
+                    <div class="fontclass">.icon-yanquan</div>
+                </li>
+            </ul>
+            <br/>
+            
+        </section>
+
+        <section style="display:none">
+            <h3>What is gfs-icons </h3>
+            <p>gfs-icons是一套常用的iconfont库，具体分类及类型可参照Classify。<br/>提供了iconfont.css/iconfont.less文件以及.eot/.svg/.ttf/.woff格式的字体文件，使用时只要引入css或less文件即可。</p>
+
+            <h3>Install</h3>
+            <pre>
+    // 使用npm安装
+    npm install gfs-icons --save
+            </pre>
+
+            <h3>Usage</h3>
+            <pre>
+    // 直接全局引用css文件
+    &lt;link rel="stylesheet" href="https://future-team.github.io/gfs-icons/iconfont.css" /&gt;
+    // ES6引入less文件
+    import "gfs-icons/iconfont.less"
+    // less中引入node_modules中的less文件，通过less-loader打包即可
+    @import "gfs-icons/iconfont.less"
+    
+    // 在html中使用
+    &lt;i class="gfs-icon icon-more"&gt;&lt;/i&gt;
+            </pre>
+
+            <h3>How iconfont works?</h3>
+            <p>Step 1. 设置@font-face</p>
+            <pre>
+    @font-face {font-family: "iconfont";
+        src: url('iconfont/iconfont.eot'); /* IE9*/
+        src: url('iconfont/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+        url('iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+    }
+            </pre>
+            <p>Step 2. 设置font-family对应@font-face的font-family</p>
+            <pre>
+    .gfs-icon {
+        font-family:"iconfont" !important;
+        font-size:16px;
+        font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+    }
+            </pre>
+            <p>Step 3. 设置content为对应的ascii码</p>
+            <pre>
+    .icon-more:before { 
+        content: "\e608"; 
+    }
+            </pre>
+            <p>Step 4. 使用</p>
+            <pre>
+    &lt;i class="gfs-icon icon-search"&gt;&lt;/i&gt;
+            </pre>
+        </section>
+    </div>
+</div>
 </body>
 <script>
     var tabTitle = document.getElementById('tabTitle').getElementsByTagName('a'),
