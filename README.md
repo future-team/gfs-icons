@@ -27,6 +27,7 @@
 
 ## Repair
 
+`version 1.0.3` 新增收藏、点赞等 <br/>
 `version 1.0.1` 解决大部分机器上不显示icon的问题 <br/>
 `version 1.0.0` 规范化iconfont <br/>
 `version 0.3.3` 新增点赞、修改、橡皮擦 <br/>
